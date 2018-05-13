@@ -5,10 +5,11 @@
     var total = $('.gallery__item').length;
     var val = e.target.value;
 
-    if(val.trim() !== '') {
+    if (val.trim() !== '') {
       var hiddenItems = $('.gallery__item:not([class*="' + val + '"])');
-      var showItems = $('.gallery__item[class*="' + val + '"]');
-      showItems.show();
+      var visibleItems = $('.gallery__item[class*="' + val + '"]');
+
+      visibleItems.show();
       hiddenItems.hide();
 
       var count = total - hiddenItems.length;
