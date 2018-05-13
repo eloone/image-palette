@@ -4,8 +4,9 @@ Single page static image gallery
 
 # Example
 
-I use it to view how my tool presets in Photoshop render:
+Image hacker's tool to display images from the file system in a static webpage.
+I use it to view how my brush/tool presets in Photoshop render:
 
 https://eloone.github.io/image-palette/
 
-Very useful Image Hacker's tool.
+It is immensely useful!
