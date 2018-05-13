@@ -1,0 +1,25 @@
+{
+  "name": "image-palette",
+  "version": "1.0.0",
+  "description": "Single page static image gallery",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "photoshop",
+    "brushes",
+    "tool-presets",
+    "images",
+    "gallery",
+    "image"
+  ],
+  "author": "@eloone",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "rxjs": "^6.1.0",
+    "rxjs-compat": "^6.1.0"
+  }
+}

@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    style(href='https://fonts.googleapis.com/css?family=Reenie+Beanie')
+    style
+      include home.css
+
+  <!-- Fill in here the titles for the page -->
+  - var title = 'My static instagram'
+  - var subtitle = 'Look at my life it is public'
+  - var itemsName = 'photos'
+  - var currentYear = (new Date()).getFullYear()
+
+  title #{title}
+  body
+    div.title
+      h1 #{title}
+      h2 #{subtitle}
+    div.header
+        p
+          input(type='text', id='search', placeholder='Filter')
+
+        p
+          | Your
+          |
+          span.count  #{images.length}
+          |  #{itemsName}
+
+        p
+          select(id='select')
+            option(value='none') -- select image size --
+            option(value='small') small
+            option(value='medium') medium
+    div.gallery
+      each image in images
+        div(class=['gallery__item', `${image.class}` ])
+          img(src=`${image.src}` )
+          p.gallery__item__caption #{image.caption}
+
+    footer Made by @eloone #{currentYear}
+
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script
+     include home.js
